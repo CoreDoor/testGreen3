@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+
+<head>
+    <meta charset='utf-8'>
+    <title>Simple Hierarchical Force (d3 v7; CSV)</title>
+    <!--<script src="https://d3js.org/d3.v6.min.js"></script>-->
+  <script type="module" crossorigin src="/assets/index.ce717e15.js"></script>
+  <link rel="stylesheet" href="/assets/index.c6433369.css">
+</head>
+
+<!--<style>
+    circle {
+        fill: #05668D;
+        opacity: 0.6;
+        stroke-width: 2px;
+    }
+
+    line {
+        stroke: #05668D;
+        stroke-opacity: 0.3;
+        stroke-width: 2px;
+    }
+</style>-->
+
+
+<body>
+
+
+
+
+
+    <div id="graphDiv"></div>
+
+
+    <div>
+        <svg width="600" height="400">
+        </svg>
+    </div>
+
+
+    <canvas id="graphCanvas" width="800" height="100"></canvas>
+
+
+    <svg>
+        <g></g>
+    </svg>
+
+    <script>
+        /*
+        var vWidth = 300;
+        var vHeight = 200;
+
+        // Prepare our physical space
+        var g = d3.select('svg').attr('width', vWidth).attr('height', vHeight).select('g');
+
+
+
+
+        // Get the data from our CSV file - D3v6
+        d3.csv('data.csv')
+            .then(function (vData) {
+                // data is now whole data set
+                vData = d3.stratify()(vData);
+                // draw chart in here!
+                drawViz(vData);
+            })
+            .catch(function (error) {
+                // handle error  
+                if (error) throw error;
+            })
+
+
+
+        //////////////////////////////
+
+
+
+        function drawViz(vData) {
+            // Declare d3 layout
+            var vLayout = d3.forceSimulation()
+                .force('link', d3.forceLink().id(function (d) { return d.id; }))
+                .force('charge', d3.forceManyBody())
+                .force('center', d3.forceCenter(vWidth / 2, vHeight / 2));
+
+            // Layout + Data
+            var vRoot = d3.hierarchy(vData);
+            var vNodes = vRoot.descendants();
+            var vLinks = vRoot.links();
+
+            var vLines = g.selectAll('line').data(vLinks).enter().append('line');
+            var vCircles = g.selectAll('circle').data(vNodes).enter().append('circle')
+                .attr('r', 7);
+
+            // Draw on screen
+            vLayout.nodes(vNodes).on('tick', ticked);
+            vLayout.force('link').links(vLinks);
+
+            // Animate on entry.
+            function ticked() {
+                vLines.attr('x1', function (d) { return d.source.x; })
+                    .attr('y1', function (d) { return d.source.y; })
+                    .attr('x2', function (d) { return d.target.x; })
+                    .attr('y2', function (d) { return d.target.y; });
+
+                vCircles.attr('cx', function (d) { return d.x; })
+                    .attr('cy', function (d) { return d.y; });
+            }
+        }
+        */
+    </script>
+
+    
+
+
+
+</body>
+
+</html>
