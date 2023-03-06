@@ -1,6 +1,10 @@
 
 
-// vite.config.js
-export default {
+//vite.config.js
+import { defineConfig } from 'vite'
+
+
+export default defineConfig({
   // config options
-}
+  base: '/HS_template/' //
+})
