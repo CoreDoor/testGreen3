@@ -6,5 +6,5 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   // config options
-  base: '/HS_template/' //
+  base: '/testGreen2/' //
 })
